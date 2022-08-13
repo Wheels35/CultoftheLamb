@@ -1,3 +1,4 @@
+|Left Branch|RightBranch|
 |---|---|
 | 30 - Belief in Sacrifice Trait | 31 - Belief in Afterlife Trait |
 | 32 - Ritual of Resurrection | 33 - Funeral |
