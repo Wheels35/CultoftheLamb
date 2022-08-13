@@ -1,4 +1,5 @@
-|Left Branch|RightBranch|
+## Afterlife
+|Left Branch|Right Branch|
 |---|---|
 | 30 - Belief in Sacrifice Trait | 31 - Belief in Afterlife Trait |
 | 32 - Ritual of Resurrection | 33 - Funeral |
@@ -7,8 +8,9 @@
 
 
 ## Work and Worship
-10 - Faithful trait
-11 - Industrious Triat
+|Left Branch|Right Branch|
+|---|---|
+|10 - Faithful trait|11 - Industrious Trait|
 6 - Inspire
 7 - Intimidate
 8 - The Glory of Construction
