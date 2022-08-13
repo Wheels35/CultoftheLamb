@@ -1,3 +1,12 @@
+# Doctrine Codes
+This is a collection of all the doctrine numbers to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
+  
+After getting your decrypted save file, search inside for **DoctrineUnlockedUpgrades** and edit the numbers within to set the doctrines you would like unlocked. Only use the numbers and not their description. Json formatting applies, so ( ##,##,## ) no comma after the last number.
+  
+*Note: The left branch takes precendance over the right branch, so if you try using 30 and 31, you will only have 31 unlocked.*
+
+
+
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
