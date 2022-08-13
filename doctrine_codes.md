@@ -1,5 +1,4 @@
-| Afterlife ||
-| --------- |---|
+
 | 30 - Belief in Sacrifice Trait | 31 - Belief in Afterlife Trait |
 | 32 - Ritual of Resurrection | 33 - Funeral |
 | 34 - Respect Your Elders Trait | 35 - Good Die Young Trait |
