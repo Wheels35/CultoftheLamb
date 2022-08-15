@@ -2,8 +2,8 @@
 This is a collection of all the doctrine numbers to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
   
 After getting your decrypted save file, search inside for **DoctrineUnlockedUpgrades** and edit the numbers within to set the doctrines you would like unlocked. Only use the numbers and not their description. Json formatting applies, so ( ##,##,## ) no comma after the last number.
->*Note: Some Doctrine upgrades are traits and a secondary location 'CultTraits' need to be modified as well which is listed below the primary marked preceding with CT:
->*Note2: Rituals require a replacement of the ritual Icon as well, they are replaced in 'UlockedUpgrades' and listed below each relevant one
+>*Note: Some Doctrine upgrades are traits and a secondary location 'CultTraits' need to be modified as well.
+>*Note2: Rituals require a replacement of the ritual Icon as well, they are replaced in 'UnlockedUpgrades' and listed below each relevant one
 
 #### EXAMPLE
 To unlock all of the left branch of **Afterlife**, and the right branch of **Work & Worship** do this:  
@@ -35,7 +35,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 | 14 - Extort Tithes               | 15 - Bribe Follower|
 | 18 - Belief in Materialism Trait <br> CultTrait: 18| 19 - Belif in False Idols Trait <br> CultTrait: 18|
 | 20 - Alms for the Poor Ritual    <br> UpgradeUnlocked: 104| 21 - Ritual of Enrichment <br> UpgradeUnlocked: 105|
-| 16 - Sacral Arthitecture Trait   <br> CT:| 17 - Devotee Trait <br> CultTrait:|
+| 16 - Sacral Arthitecture Trait   <br> CultTraits:27| 17 - Devotee Trait <br> CultTraits:26|
 
 ## Law & Order
 |Left Branch|Right Branch|
