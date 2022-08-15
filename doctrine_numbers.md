@@ -1,25 +1,20 @@
 # Doctrine Codes
 This is a collection of all the doctrine numbers to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
-  
+>* Before doing any of the following steps BACKUP YOUR SAVE!
+
 After getting your decrypted save file, there can be upto three sections that need to be updated; **UnlockedUpgrades**, **DoctrineUnlockedUpgrades** and **CultTraits**, each of which are closely positioned in the json, but everything in the Left Branch overrides the right branch version and must be removed. So if the left branch only has one entry and the right branch has two different ones you still need to remove the Left Branch values.
 
->*Note: Some Doctrine upgrades are traits and a secondary location 'CultTraits' need to be modified as well.
->*Note2: Rituals require a replacement of the ritual Icon as well, they are replaced in 'UnlockedUpgrades' and listed below each relevant one
+###Example
+In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the following related to Funeral: UnlockedUpgrades 111 (and) DoctrinUnlockedUpgrades 33 and replace with the corrsponding from Ressurection: UnlockedUpgrades 110 (and) DoctrineUnlockedUpgrades 32
 
-#### EXAMPLE
-To unlock all of the left branch of **Afterlife**, and the right branch of **Work & Worship** do this:  
-"DoctrineUnlockedUpgrades":[30,32,34,36,11,7,9,13],
-
-You dont have to unlock a full branch you can chose either side, but only one from each row.
->*Note: The left branch takes precedence over the right branch, so if you try using 30 and 31, you will only have 31 unlocked.*
 
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
-| - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
-|  - Ritual of Resurrection -  <br> UpgradeUnlocked: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UpgradeUnlocked: 111 <br> DoctrineUnlockedUpgrades: 33|
+| **- Belief in Sacrifice Trait -** <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
+|  - Ritual of Resurrection -  <br> UnlockedUpgrades: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UnlockedUpgrades: 111 <br> DoctrineUnlockedUpgrades: 33|
 | - Respect Your Elders Trait - <br> DoctrineUnlockedUpgrades: 34  <br> CultTrait: 30  | - Good Die Young Trait - <br> DoctrineUnlockedUpgrades: 35 <br> CultTrait: 31|
-|  - Return to the Earth - <br> (Building unlock) UpgradeUnlocked: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen - <br> (Building unlock) UpgradeUnlocked: 57 <br> DoctrineUnlockedUpgrades: 37|
+|  - Return to the Earth - <br> (Building unlock) UnlockedUpgrades: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen - <br> (Building unlock) UnlockedUpgrades: 57 <br> DoctrineUnlockedUpgrades: 37|
 
 
 ## Work and Worship
@@ -27,29 +22,29 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |---|---|
 | - Faithful trait - <br> DoctrineUnlockedUpgrades: 10 <br> CultTrait: 11 | - Industrious Trait - <br> DoctrineUnlockedUpgrades: 11  <br> CultTrait: 24|
 |  - Inspire - <br> DoctrineUnlockedUpgrades: 6                   |  - Intimidate - <br> DoctrineUnlockedUpgrades: 7|
-|  - The Glory of Construction - <br> UpgradeUnlocked: 100 <br> DoctrineUnlockedUpgrades: 8  |  - Ritual of Enlightenment - <br> UpgradeUnlocked: 101 <br> DoctrineUnlockedUpgrades: 9|
-| - Glory Through Toil Ritual - <br> UpgradeUnlocked: 102 <br> DoctrineUnlockedUpgrades: 12 | - Holy Day Ritual - <br> UpgradeUnlocked: 103 <br> DoctrineUnlockedUpgrades: 13 |
+|  - The Glory of Construction - <br> UnlockedUpgrades: 100 <br> DoctrineUnlockedUpgrades: 8  |  - Ritual of Enlightenment - <br> UnlockedUpgrades: 101 <br> DoctrineUnlockedUpgrades: 9|
+| - Glory Through Toil Ritual - <br> UnlockedUpgrades: 102 <br> DoctrineUnlockedUpgrades: 12 | - Holy Day Ritual - <br> UnlockedUpgrades: 103 <br> DoctrineUnlockedUpgrades: 13 |
 
 ## Possessions
 |Left Branch|Right Branch|
 |---|---|
-| 14 - Extort Tithes               | 15 - Bribe Follower|
-| 18 - Belief in Materialism Trait <br> CultTrait: 18| 19 - Belif in False Idols Trait <br> CultTrait: 18|
-| 20 - Alms for the Poor Ritual    <br> UpgradeUnlocked: 104| 21 - Ritual of Enrichment <br> UpgradeUnlocked: 105|
-| 16 - Sacral Arthitecture Trait   <br> CultTraits:27| 17 - Devotee Trait <br> CultTraits:26|
+| - Extort Tithes - <br> DoctrineUnlockedUpgrades: 14            | <br> DoctrineUnlockedUpgrades: 15 - Bribe Follower|
+| - Belief in Materialism Trait - <br> DoctrineUnlockedUpgrades: 18 <br> CultTraits: 18| - Belif in False Idols Trait - <br> DoctrineUnlockedUpgrades: 19 <br> CultTraits: 18|
+| - Alms for the Poor Ritual - <br> UnlockedUpgrades: 104 <br> DoctrineUnlockedUpgrades: 20 | - Ritual of Enrichment - <br> UnlockedUpgrades: 105 <br> DoctrineUnlockedUpgrades: 21 |
+| - Sacral Arthitecture Trait - <br> DoctrineUnlockedUpgrades: 16  <br> CultTraits:27| - Devotee Trait - <br> DoctrineUnlockedUpgrades: 17 <br> CultTraits:26|
 
 ## Law & Order
 |Left Branch|Right Branch|
 |---|---|
-| 38 - Murder Follower              | 39 - Ascend Follower Ritual <br> UpgradeUnlocked: 154|
-| 40 - Ritualist Fight Pit          <br> UpgradeUnlocked: 112| 41 - Wedding <br> UpgradeUnlocked: 113|
-| 44 - Belief in Original Sin Trait <br> CultTrait: 7| 45 - Belief in Absolution Trait <br> CultTrait: 8|
-| 42 - Loyalty Enforcer             <br> UpgradeUnlocked: 114| 43 - Tax Enforcer <br> UpgradeUnlocked: 115|
+| - Murder Follower - <br> DoctrineUnlockedUpgrades: 38 | - Ascend Follower Ritual - <br> UnlockedUpgrades: 154 <br> DoctrineUnlockedUpgrades: 39 |
+| - Ritualist Fight Pit - <br> UnlockedUpgrades: 112 <br> DoctrineUnlockedUpgrades: 40 | - Wedding - <br> UnlockedUpgrades: 113 <br> DoctrineUnlockedUpgrades: 41 |
+| - Belief in Original Sin Trait - <br> DoctrineUnlockedUpgrades: 44 <br> CultTrait: 7| <- Belief in Absolution Trait - br> DoctrineUnlockedUpgrades: 45  <br> CultTrait: 8|
+| - Loyalty Enforcer - <br> UnlockedUpgrades: 114 <br> DoctrineUnlockedUpgrades: 42 | - Tax Enforcer - <br> UnlockedUpgrades: 115 <br> DoctrineUnlockedUpgrades: 43 |
 
 ## Sustenance
 |Left Branch|Right Branch|
 |---|---|
-| 22 - Ritual Fast                 <br> UpgradeUnlocked: 106| 23 - Feasting Ritual <br> UpgradeUnlocked: 107|
-| 26 - Cannibal Trait              <br> CultTrait: 5| 27 - Grass Eater Trait <br> CultTrait: 6|
-| 28 - Ritual of the Harvest       <br> UpgradeUnlocked: 108| 29 - Ritual of the Ocean's Bounty <br> UpgradeUnlocked: 109|
-| 24 - Substances Encouraged Trait <br> CultTrait: 28| 25 - Belif in Prohibitionism <br> CultTrait: 29|
+| - Ritual Fast - <br> UnlockedUpgrades: 106 <br> UnlockedUpgrades: 22 | - Feasting Ritual - <br> UnlockedUpgrades: 107 <br> UnlockedUpgrades: 23 |
+| - Cannibal Trait - <br> UnlockedUpgrades: 26 <br> CultTrait: 5| - Grass Eater Trait - <br> UnlockedUpgrades: 27  <br> CultTrait: 6|
+| - Ritual of the Harvest - <br> UnlockedUpgrades: 108 <br> UnlockedUpgrades: 28 | - Ritual of the Ocean's Bounty - <br> UnlockedUpgrades: 109 <br> UnlockedUpgrades: 29|
+| - Substances Encouraged Trait - <br> UnlockedUpgrades: 24 <br> CultTrait: 28| - Belif in Prohibitionism - <br> UnlockedUpgrades: 25  <br> CultTrait: 29|
