@@ -27,7 +27,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 | 10 - Faithful trait <br> CultTrait: 11 | 11 - Industrious Trait <br> CultTrait: 24|
 | 6 - Inspire                    | 7 - Intimidate|
 | 8 - The Glory of Construction <br> UpgradeUnlocked: 100  | 9 - Ritual of Enlightenment <br> UpgradeUnlocked: 101|
-| 12 - Glory Through Toil Ritual | 13 - Holy Day Ritual|
+| 12 - Glory Through Toil Ritual <br> UpgradeUnlocked: 102| 13 - Holy Day Ritual <br> UpgradeUnlocked: 103|
 
 ## Possessions
 |Left Branch|Right Branch|
