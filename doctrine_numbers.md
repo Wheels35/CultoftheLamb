@@ -18,8 +18,8 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |---|---|
 | - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
 |  - Ritual of Resurrection -  <br> UpgradeUnlocked: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UpgradeUnlocked: 111 <br> DoctrineUnlockedUpgrades: 33|
-| 34 - Respect Your Elders Trait <br> CultTrait: 30  | 35 - Good Die Young Trait <br> CultTrait: 31|
-| 36 - Return to the Earth       <br> (Building unlock) UpgradeUnlocked: 53| 37 - Grieve the fallen <br> (Building unlock) UpgradeUnlocked: 57|
+| - Respect Your Elders Trait - <br> DoctrineUnlockedUpgrades: 34  <br> CultTrait: 30  | - Good Die Young Trait - <br> DoctrineUnlockedUpgrades: 35 <br> CultTrait: 31|
+|  - Return to the Earth - <br> (Building unlock) UpgradeUnlocked: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen <br> - (Building unlock) UpgradeUnlocked: 57 <br> DoctrineUnlockedUpgrades: 37|
 
 
 ## Work and Worship
