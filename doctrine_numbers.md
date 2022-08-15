@@ -34,7 +34,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |---|---|
 | 14 - Extort Tithes               | 15 - Bribe Follower|
 | 18 - Belief in Materialism Trait <br> CultTrait: 18| 19 - Belif in False Idols Trait <br> CultTrait: 18|
-| 20 - Alms for the Poor Ritual    <br> UpgradeUnlocked: | 21 - Ritual of Enrichment <br> UpgradeUnlocked:|
+| 20 - Alms for the Poor Ritual    <br> UpgradeUnlocked: 104| 21 - Ritual of Enrichment <br> UpgradeUnlocked: 105|
 | 16 - Sacral Arthitecture Trait   <br> CT:| 17 - Devotee Trait <br> CultTrait:|
 
 ## Law & Order
