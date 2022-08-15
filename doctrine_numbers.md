@@ -48,7 +48,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 ## Sustenance
 |Left Branch|Right Branch|
 |---|---|
-| 22 - Ritual Fast                 | 23 - Feasting Ritual|
+| 22 - Ritual Fast                 <br> UpgradeUnlocked: 106| 23 - Feasting Ritual <br> UpgradeUnlocked: 107|
 | 26 - Cannibal Trait              <br> CultTrait:| 27 - Grass Eater Trait <br> CultTrait:|
 | 28 - Ritual of the Harvest       <br> UpgradeUnlocked: 108| 29 - Ritual of the Ocean's Bounty <br> UpgradeUnlocked: 109|
 | 24 - Substances Encouraged Trait <br> CultTrait:| 25 - Belif in Prohibitionism <br> CultTrait:|
