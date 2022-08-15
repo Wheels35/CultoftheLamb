@@ -15,7 +15,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
-| 30 - Belief in Sacrifice Trait <br> CultTrait: 9 | 31 - Belief in Afterlife Trait <br> CultTrait: 3|
+| - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    | 31 - Belief in Afterlife Trait <br> CultTrait: 3|
 | 32 - Ritual of Resurrection   <br> UpgradeUnlocked: 110| 33 - Funeral <br> UpgradeUnlocked: 111|
 | 34 - Respect Your Elders Trait <br> CultTrait: 30  | 35 - Good Die Young Trait <br> CultTrait: 31|
 | 36 - Return to the Earth       | 37 - Grieve the fallen |
