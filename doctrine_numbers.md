@@ -28,7 +28,7 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 ## Possessions
 |Left Branch|Right Branch|
 |---|---|
-| - Extort Tithes - <br> DoctrineUnlockedUpgrades: 14            | <br> DoctrineUnlockedUpgrades: 15 - Bribe Follower|
+| - Extort Tithes - <br> DoctrineUnlockedUpgrades: 14            | - Bribe Follower - <br> DoctrineUnlockedUpgrades: 15 |
 | - Belief in Materialism Trait - <br> DoctrineUnlockedUpgrades: 18 <br> CultTraits: 18| - Belif in False Idols Trait - <br> DoctrineUnlockedUpgrades: 19 <br> CultTraits: 18|
 | - Alms for the Poor Ritual - <br> UnlockedUpgrades: 104 <br> DoctrineUnlockedUpgrades: 20 | - Ritual of Enrichment - <br> UnlockedUpgrades: 105 <br> DoctrineUnlockedUpgrades: 21 |
 | - Sacral Arthitecture Trait - <br> DoctrineUnlockedUpgrades: 16  <br> CultTraits:27| - Devotee Trait - <br> DoctrineUnlockedUpgrades: 17 <br> CultTraits:26|
