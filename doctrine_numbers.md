@@ -44,7 +44,7 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 ## Sustenance
 |Left Branch|Right Branch|
 |---|---|
-| - Ritual Fast - <br> UnlockedUpgrades: 106 <br> UnlockedUpgrades: 22 | - Feasting Ritual - <br> UnlockedUpgrades: 107 <br> UnlockedUpgrades: 23 |
-| - Cannibal Trait - <br> UnlockedUpgrades: 26 <br> CultTrait: 5| - Grass Eater Trait - <br> UnlockedUpgrades: 27  <br> CultTrait: 6|
-| - Ritual of the Harvest - <br> UnlockedUpgrades: 108 <br> UnlockedUpgrades: 28 | - Ritual of the Ocean's Bounty - <br> UnlockedUpgrades: 109 <br> UnlockedUpgrades: 29|
-| - Substances Encouraged Trait - <br> UnlockedUpgrades: 24 <br> CultTrait: 28| - Belif in Prohibitionism - <br> UnlockedUpgrades: 25  <br> CultTrait: 29|
+| - Ritual Fast - <br> UnlockedUpgrades: 106 <br> DoctrineUnlockedUpgrades: 22 | - Feasting Ritual - <br> UnlockedUpgrades: 107 <br> DoctrineUnlockedUpgrades: 23 |
+| - Cannibal Trait - <br> DoctrineUnlockedUpgrades: 26 <br> CultTrait: 5| - Grass Eater Trait - <br> DoctrineUnlockedUpgrades: 27  <br> CultTrait: 6|
+| - Ritual of the Harvest - <br> UnlockedUpgrades: 108 <br> DoctrineUnlockedUpgrades: 28 | - Ritual of the Ocean's Bounty - <br> UnlockedUpgrades: 109 <br> DoctrineUnlockedUpgrades: 29|
+| - Substances Encouraged Trait - <br> DoctrineUnlockedUpgrades: 24 <br> CultTrait: 28| - Belief in Prohibitionism - <br> DoctrineUnlockedUpgrades: 25  <br> CultTrait: 29|
