@@ -42,7 +42,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |---|---|
 | 38 - Murder Follower              | 39 - Ascend Follower Ritual <br> UpgradeUnlocked: 154|
 | 40 - Ritualist Fight Pit          <br> UpgradeUnlocked: 112| 41 - Wedding <br> UpgradeUnlocked: 113|
-| 44 - Belief in Original Sin Trait <br> CultTrait:| 45 - Belief in Absolution Trait <br> CultTrait:|
+| 44 - Belief in Original Sin Trait <br> CultTrait: 7| 45 - Belief in Absolution Trait <br> CultTrait: 8|
 | 42 - Loyalty Enforcer             | 43 - Tax Enforcer|
 
 ## Sustenance
