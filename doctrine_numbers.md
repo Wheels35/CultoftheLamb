@@ -1,7 +1,8 @@
 # Doctrine Codes
 This is a collection of all the doctrine numbers to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
   
-After getting your decrypted save file, search inside for **DoctrineUnlockedUpgrades** and edit the numbers within to set the doctrines you would like unlocked. Only use the numbers and not their description. Json formatting applies, so ( ##,##,## ) no comma after the last number.
+After getting your decrypted save file, there can be upto three sections that need to be updated; **UnlockedUpgrades**, **DoctrineUnlockedUpgrades** and **CultTraits**, each of which are closely positioned in the json, but everything in the Left Branch overrides the right branch version and must be removed. So if the left branch only has one entry and the right branch has two different ones you still need to remove the Left Branch values.
+
 >*Note: Some Doctrine upgrades are traits and a secondary location 'CultTraits' need to be modified as well.
 >*Note2: Rituals require a replacement of the ritual Icon as well, they are replaced in 'UnlockedUpgrades' and listed below each relevant one
 
@@ -15,8 +16,8 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
-| - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    | 31 - Belief in Afterlife Trait <br> CultTrait: 3|
-| 32 - Ritual of Resurrection   <br> UpgradeUnlocked: 110| 33 - Funeral <br> UpgradeUnlocked: 111|
+| - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
+|  - Ritual of Resurrection -  <br> UpgradeUnlocked: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UpgradeUnlocked: 111 <br> DoctrineUnlockedUpgrades: 33|
 | 34 - Respect Your Elders Trait <br> CultTrait: 30  | 35 - Good Die Young Trait <br> CultTrait: 31|
 | 36 - Return to the Earth       <br> (Building unlock) UpgradeUnlocked: 53| 37 - Grieve the fallen <br> (Building unlock) UpgradeUnlocked: 57|
 
