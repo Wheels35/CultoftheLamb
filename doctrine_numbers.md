@@ -32,7 +32,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |Left Branch|Right Branch|
 |---|---|
 | 14 - Extort Tithes               | 15 - Bribe Follower|
-| 18 - Belief in Materialism Trait <br> CultTrait: | 19 - Belif in False Idols Trait <br> CultTrait:|
+| 18 - Belief in Materialism Trait <br> CultTrait: 18| 19 - Belif in False Idols Trait <br> CultTrait: 18|
 | 20 - Alms for the Poor Ritual    | 21 - Ritual of Enrichment|
 | 16 - Sacral Arthitecture Trait   <br> CT:| 17 - Devotee Trait <br> CultTrait:|
 
