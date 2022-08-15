@@ -2,6 +2,7 @@
 This is a collection of all the doctrine numbers to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
   
 After getting your decrypted save file, search inside for **DoctrineUnlockedUpgrades** and edit the numbers within to set the doctrines you would like unlocked. Only use the numbers and not their description. Json formatting applies, so ( ##,##,## ) no comma after the last number.
+>*Note: Some Doctrine upgrades are traits and a secondary location 'CultTraits' need to be modified as well which is listed below the primary marked preceding with CT:
 
 #### EXAMPLE
 To unlock all of the left branch of **Afterlife**, and the right branch of **Work & Worship** do this:  
@@ -13,7 +14,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
-| 30 - Belief in Sacrifice Trait | 31 - Belief in Afterlife Trait |
+| 30 - Belief in Sacrifice Trait <br> CT: 9 | 31 - Belief in Afterlife Trait <br> CT: 3|
 | 32 - Ritual of Resurrection    | 33 - Funeral |
 | 34 - Respect Your Elders Trait | 35 - Good Die Young Trait |
 | 36 - Return to the Earth       | 37 - Grieve the fallen |
@@ -22,7 +23,7 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 ## Work and Worship
 |Left Branch|Right Branch|
 |---|---|
-| 10 - Faithful trait            | 11 - Industrious Trait|
+| 10 - Faithful trait <br> CT: 11            | 11 - Industrious Trait <br> CT: 24|
 | 6 - Inspire                    | 7 - Intimidate|
 | 8 - The Glory of Construction  | 9 - Ritual of Enlightenment|
 | 12 - Glory Through Toil Ritual | 13 - Holy Day Ritual|
@@ -31,22 +32,22 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 |Left Branch|Right Branch|
 |---|---|
 | 14 - Extort Tithes               | 15 - Bribe Follower|
-| 18 - Belief in Materialism Trait | 19 - Belif in False Idols Trait|
+| 18 - Belief in Materialism Trait <br> CT: | 19 - Belif in False Idols Trait <br> CT:|
 | 20 - Alms for the Poor Ritual    | 21 - Ritual of Enrichment|
-| 16 - Sacral Arthitecture Trait   | 17 - Devotee Trait|
+| 16 - Sacral Arthitecture Trait   <br> CT:| 17 - Devotee Trait <br> CT:|
 
 ## Law & Order
 |Left Branch|Right Branch|
 |---|---|
 | 38 - Murder Follower              | 39 - Ascend Follower Ritual|
 | 40 - Ritualist Fight Pit          | 41 - Wedding|
-| 44 - Belief in Original Sin Trait | 45 - Belief in Absolution Trait|
+| 44 - Belief in Original Sin Trait <br> CT:| 45 - Belief in Absolution Trait <br> CT:|
 | 42 - Loyalty Enforcer             | 43 - Tax Enforcer|
 
 ## Sustenance
 |Left Branch|Right Branch|
 |---|---|
 | 22 - Ritual Fast                 | 23 - Feasting Ritual|
-| 26 - Cannibal Trait              | 27 - Grass Eater Trait|
+| 26 - Cannibal Trait              <br> CT:| 27 - Grass Eater Trait <br> CT:|
 | 28 - Ritual of the Harvest       | 29 - Ritual of the Ocean's Bounty|
-| 24 - Substances Encouraged Trait | 25 - Belif in Prohibitionism|
+| 24 - Substances Encouraged Trait <br> CT:| 25 - Belif in Prohibitionism <br> CT:|
