@@ -38,7 +38,7 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 |---|---|
 | - Murder Follower - <br> DoctrineUnlockedUpgrades: 38 | - Ascend Follower Ritual - <br> UnlockedUpgrades: 154 <br> DoctrineUnlockedUpgrades: 39 |
 | - Ritualist Fight Pit - <br> UnlockedUpgrades: 112 <br> DoctrineUnlockedUpgrades: 40 | - Wedding - <br> UnlockedUpgrades: 113 <br> DoctrineUnlockedUpgrades: 41 |
-| - Belief in Original Sin Trait - <br> DoctrineUnlockedUpgrades: 44 <br> CultTrait: 7| <- Belief in Absolution Trait - br> DoctrineUnlockedUpgrades: 45  <br> CultTrait: 8|
+| - Belief in Original Sin Trait - <br> DoctrineUnlockedUpgrades: 44 <br> CultTrait: 7| - Belief in Absolution Trait - <br> DoctrineUnlockedUpgrades: 45  <br> CultTrait: 8|
 | - Loyalty Enforcer - <br> UnlockedUpgrades: 114 <br> DoctrineUnlockedUpgrades: 42 | - Tax Enforcer - <br> UnlockedUpgrades: 115 <br> DoctrineUnlockedUpgrades: 43 |
 
 ## Sustenance
