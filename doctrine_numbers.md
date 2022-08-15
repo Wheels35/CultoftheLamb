@@ -19,16 +19,16 @@ You dont have to unlock a full branch you can chose either side, but only one fr
 | - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
 |  - Ritual of Resurrection -  <br> UpgradeUnlocked: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UpgradeUnlocked: 111 <br> DoctrineUnlockedUpgrades: 33|
 | - Respect Your Elders Trait - <br> DoctrineUnlockedUpgrades: 34  <br> CultTrait: 30  | - Good Die Young Trait - <br> DoctrineUnlockedUpgrades: 35 <br> CultTrait: 31|
-|  - Return to the Earth - <br> (Building unlock) UpgradeUnlocked: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen <br> - (Building unlock) UpgradeUnlocked: 57 <br> DoctrineUnlockedUpgrades: 37|
+|  - Return to the Earth - <br> (Building unlock) UpgradeUnlocked: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen - <br> (Building unlock) UpgradeUnlocked: 57 <br> DoctrineUnlockedUpgrades: 37|
 
 
 ## Work and Worship
 |Left Branch|Right Branch|
 |---|---|
-| 10 - Faithful trait <br> CultTrait: 11 | 11 - Industrious Trait <br> CultTrait: 24|
-| 6 - Inspire                    | 7 - Intimidate|
-| 8 - The Glory of Construction <br> UpgradeUnlocked: 100  | 9 - Ritual of Enlightenment <br> UpgradeUnlocked: 101|
-| 12 - Glory Through Toil Ritual <br> UpgradeUnlocked: 102| 13 - Holy Day Ritual <br> UpgradeUnlocked: 103|
+| - Faithful trait - <br> DoctrineUnlockedUpgrades: 10 <br> CultTrait: 11 | - Industrious Trait - <br> DoctrineUnlockedUpgrades: 11  <br> CultTrait: 24|
+|  - Inspire - <br> DoctrineUnlockedUpgrades: 6                   |  - Intimidate - <br> DoctrineUnlockedUpgrades: 7|
+|  - The Glory of Construction - <br> UpgradeUnlocked: 100 <br> DoctrineUnlockedUpgrades: 8  |  - Ritual of Enlightenment - <br> UpgradeUnlocked: 101 <br> DoctrineUnlockedUpgrades: 9|
+| - Glory Through Toil Ritual - <br> UpgradeUnlocked: 102 <br> DoctrineUnlockedUpgrades: 12 | - Holy Day Ritual - <br> UpgradeUnlocked: 103 <br> DoctrineUnlockedUpgrades: 13 |
 
 ## Possessions
 |Left Branch|Right Branch|
