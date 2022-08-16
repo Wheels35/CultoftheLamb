@@ -4,6 +4,8 @@ This is a collection of all the doctrine numbers, unlock numbers, and cult trait
 
 After getting your decrypted save file, there can be upto three sections that need to be updated; **UnlockedUpgrades**, **DoctrineUnlockedUpgrades** and **CultTraits**, each of which are closely positioned in the json, but everything in the Left Branch overrides the Right Branch version and must be removed. So if the Left Branch only has one entry and the Right Branch has two different ones you still need to remove the Left Branch values.
 
+Why am I using the word branches? Well, in the Doctrines Book, they are listed as a Left and Right path/branch of each category.
+
 ### Example
 In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the following related to Funeral: UnlockedUpgrades 111 (and) DoctrinUnlockedUpgrades 33 and replace with the corrsponding from Ressurection: UnlockedUpgrades 110 (and) DoctrineUnlockedUpgrades 32
 
@@ -15,7 +17,6 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 |  - Ritual of Resurrection -  <br> UnlockedUpgrades: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UnlockedUpgrades: 111 <br> DoctrineUnlockedUpgrades: 33|
 | - Respect Your Elders Trait - <br> DoctrineUnlockedUpgrades: 34  <br> CultTrait: 30  | - Good Die Young Trait - <br> DoctrineUnlockedUpgrades: 35 <br> CultTrait: 31|
 |  - Return to the Earth - <br> (Building unlock) UnlockedUpgrades: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen - <br> (Building unlock) UnlockedUpgrades: 57 <br> DoctrineUnlockedUpgrades: 37|
-
 
 ## Work and Worship
 |Left Branch|Right Branch|
