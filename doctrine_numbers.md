@@ -1,4 +1,4 @@
-# Unlocked Doctrine Reversal
+# Unlocked Doctrine Modifying
 This is a collection of all the doctrine numbers, unlock numbers, and cult traits to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor. I suggest Notepad++ and the JSTool plugin. Once you open your file you can run do Plugins > JSTool > JSFormat to get a cleaner looking JSON.
 >* Before doing any of the following steps PLEASE BACKUP YOUR SAVE!
 
