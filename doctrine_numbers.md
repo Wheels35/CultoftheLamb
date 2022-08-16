@@ -1,5 +1,5 @@
 # Unlocked Doctrine Reversal
-This is a collection of all the doctrine numbers, unlock numbers, and cult traits to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor.  
+This is a collection of all the doctrine numbers, unlock numbers, and cult traits to be utilized with (https://pentalex.github.io/COTL-SaveDecryptor/) and a text editor. I suggest Notepad++ and the JSTool plugin. Once you open your file you can run do Plugins > JSTool > JSFormat to get a cleaner looking JSON.
 >* Before doing any of the following steps PLEASE BACKUP YOUR SAVE!
 
 After getting your decrypted save file, there can be upto three sections that need to be updated; **UnlockedUpgrades**, **DoctrineUnlockedUpgrades** and **CultTraits**, each of which are closely positioned in the json, but everything in the Left Branch overrides the right branch version and must be removed. So if the left branch only has one entry and the right branch has two different ones you still need to remove the Left Branch values.
