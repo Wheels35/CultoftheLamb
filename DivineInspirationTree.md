@@ -5,6 +5,9 @@ Add the number you want to unlock to the bottom of **UnlockedUpgrades**.
 
 An alternative is to see your **AbilityPoints** to any number and then you can unlock each node in your tree while at the Shrine. I recommend doing this as you get the cutscenes, and ingame dialogs/alerts
 
+>*If you have any bugged unlocks I would try the following steps:
+>Backup your save, then remove the number for the bugged unlock, launch the save, verify its locked, save over it from in game WITHOUT UNLOCKING the refinery, quit to main menu, launch save, then unlock it again.
+
 --- Cult Upgrade IV 84/79 --- 84 is primary, 79 is secondary unlock  
 80 - Tabernacle III  
 78 - Shrine flame III  
