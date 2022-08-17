@@ -16,7 +16,8 @@ An alternative is to see your **AbilityPoints** to any number and then you can u
 36 - Lumberyard II  
 31 - Stone Mine II  
 211 - Missionary III  
-156 - Demonic Summoning Circle III  
+156 - Demonic Summoning Circle III
+126 - Devotion Harvest Totem
 
 --- cult upgrade III 83/75--- 83 is primary, 75 is secondary unlock  
 91 - Ritual Cooldowns  
