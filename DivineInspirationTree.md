@@ -1,4 +1,4 @@
-##Divine Inspiration Tree
+## Divine Inspiration Tree
 
 Below you will find the upgrade numbers for each of the specific nodes within the Divine Inspiration Tree. These are useful for locking/unlocking nodes that bug out, or manually unlocking a bunch of them.
 Add the number you want to unlock to the bottom of **UnlockedUpgrades**.
