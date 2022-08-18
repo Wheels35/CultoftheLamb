@@ -5,6 +5,7 @@ You can unencrypt your save file with (https://pentalex.github.io/COTL-SaveDecry
 
 ### Quick Links
 - [Doctrine Unlocks Modifying](https://github.com/Wheels35/CultoftheLamb/blob/main/doctrine_numbers.md)
+- [Tarot Card IDs](https://github.com/Wheels35/CultoftheLamb/blob/main/tarot_cards.md)
 - [Item IDs for Inventory Editing](https://github.com/Wheels35/CultoftheLamb/blob/main/item_list.md)
 - [Divine Inspiration List](https://github.com/Wheels35/CultoftheLamb/blob/main/DivineInspirationTree.md)
 - [Cooking Recipes](https://github.com/Wheels35/CultoftheLamb/blob/main/cooking_recipes.md)
