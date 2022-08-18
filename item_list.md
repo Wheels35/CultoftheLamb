@@ -2,7 +2,7 @@
 
 This is a list of the currently known item IDs. Some are unused or not an inventory item. They are here for reference and potential future modding.
 
-In order to add items to your inventory search for **"items":** and add the following lines where type is the id of the item form the list and quantity is the amount you want:
+In order to add items to your inventory search for **"items":** and add the following lines where **type** is the id of the item form the list and quantity is the amount you want:
 
 ,{
 "type": 20,
