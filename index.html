@@ -4,9 +4,1124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ColT Save Modding</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/scripts.js"></script>
+
 </head>
 <body>
-    This is a test page
+    <main>
+        <header>
+          <div class="content-width">
+            <div class="parent">
+            <div class="crown"></div>
+            <div class="crown title"><h1>Cult of the Lamb</h1></div>
+        </div>
+            <p></p>
+          </div>
+        </header>
+        <div class="content-width">
+            <p>
+                This site will serve as a quick guide to manually editing your Cult of the Lamb Saves. There's not a lot that goes into it, and it can help break some of the tedious parts of the game, or even help you get past some of the unfortunate bugs. This currently only works for the PC versions of the game, as there is no known way to decrypt your save.            
+            </p>
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Instructions')" id="defaultOpen">Instructions</button>
+                <button class="tablinks" onclick="openTab(event, 'Doctrine')">Doctrine IDS</button>
+                <button class="tablinks" onclick="openTab(event, 'Divine')">Divine Inspiration</button>
+                <button class="tablinks  cookingbg" onclick="openTab(event, 'Cooking')">Cooking Recipes</button>
+                <button class="tablinks" onclick="openTab(event, 'Item')">Item IDs</button>
+                <button class="tablinks" onclick="openTab(event, 'Tarot')">Tarot Cards</button>
+              </div>
+
+              <div id="Instructions" class="tabcontent">
+                <h3>Instructions</h3>
+                <p>There are a few things we need to do to prepare our save for editing. </br></br>Firstly, most importantly, <span class="bold">BACKUP YOUR SAVE</span>. Your save is located at:</br> <span style="background-color: black;">&nbsp;%USERPROFILE%\AppData\LocalLow\Massive Monster\Cult Of The Lamb\saves &nbsp;</span></br></br> slot_0 is save slot 1, slot_1 is save slot 2, and slot_2 is save slot 3. It doesn't matter how or where you back it up, just make sure it is backed up.</p>
+                <p>
+                    Secondly, take your save file and go to this github website: <a href="https://pentalex.github.io/COTL-SaveDecryptor/" class="bold" target="_blank">CotL Save Decryptor</a> it will spit out a new unencrypted save file called 'slot_0' make sure you are aware that no matter which save you are encrypting it will always be 'slot_0' that gets produced.
+                </p>
+                <p>
+                    Lastly, open your new unencrypted save file with a text editor that can read json. You can open in a standard notepad, but it will be extremely messy. I suggest Notepad++ or VSCode. If using Notepad++, grab the JSTools plugin from the plugins menu: Plugins > Plugins Admin > JSTools. After you install it, you can then open your JSon file and go to: Plugins > JSTools > JSFormat, and it will make your json file much more readable.
+            </p>
+                    Now you can go onto whichever section you want to modify your save. We will be editing individual objects within the json file so <span class="bold">Ctrl + F</span> to search for the mentioned object will make your life so much easier.
+                </p>
+              </div>
+              
+              <div id="Doctrine" class="tabcontent">
+                <h3>Doctrine Unlocking / Modifying</h3>
+                <p>
+                    There can be upto three sections that need to be updated; <span class="bold">UnlockedUpgrades</span>, <span class="bold">DoctrineUnlockedUpgrades</span> and <span class="bold">CultTraits</span>, each of which are closely positioned in the json file. </br></br> Everything in the Left Branch overrides the Right Branch version and must be removed. So if the Left Branch only has one entry and the Right Branch has two different ones you still need to remove the Left Branch values.
+                </p>
+                <p>
+                    Why am I using the word branches? Well, in the Doctrines Book, they are listed as a Left and Right path/branch of each category.
+                </p> 
+                    <h4>Example</h4>
+                    In order to replace <span class="bold">Ritual of Funeral</span> with <span class="bold">Ritual of Resurrection</span> remove the following related to Funeral: UnlockedUpgrades 111 (and) DoctrinUnlockedUpgrades 33 and replace with the corrsponding from Resurrection: UnlockedUpgrades 110 (and) DoctrineUnlockedUpgrades 32
+                </p>
+                <p>
+                    Below are tables for each Doctrine Tree for reference when doing the replacement.
+                    <h2 style="text-align: center">Afterlife</h3>
+                    <table>
+                      <thead>
+                        <tr>
+                          <th>Left Branch</th>
+                          <th>Right Branch</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>
+                            - Belief in Sacrifice Trait - <br />
+                            DoctrineUnlockedUpgrades: 30 <br />
+                            CultTrait: 9
+                          </td>
+                          <td>
+                            - Belief in Afterlife Trait - <br />
+                            DoctrineUnlockedUpgrades: 31 <br />
+                            CultTrait: 3
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            - Ritual of Resurrection - <br />
+                            UnlockedUpgrades: 110 <br />
+                            DoctrineUnlockedUpgrades: 32
+                          </td>
+                          <td>
+                            - Funeral - <br />
+                            UnlockedUpgrades: 111 <br />
+                            DoctrineUnlockedUpgrades: 33
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            - Respect Your Elders Trait - <br />
+                            DoctrineUnlockedUpgrades: 34 <br />
+                            CultTrait: 30
+                          </td>
+                          <td>
+                            - Good Die Young Trait - <br />
+                            DoctrineUnlockedUpgrades: 35 <br />
+                            CultTrait: 31
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            - Return to the Earth - <br />
+                            UnlockedUpgrades: 53 <br />
+                            DoctrineUnlockedUpgrades: 36
+                          </td>
+                          <td>
+                            - Grieve the fallen - <br />
+                            UnlockedUpgrades: 57 <br />
+                            DoctrineUnlockedUpgrades: 37
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+                    <h2 style="text-align: center">Work and Worship</h3>
+
+                    <table>
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Left Branch</th>
+                            <th>Right Branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              - Faithful trait - <br />
+                              DoctrineUnlockedUpgrades: 10 <br />
+                              CultTrait: 11
+                            </td>
+                            <td>
+                              - Industrious Trait - <br />
+                              DoctrineUnlockedUpgrades: 11 <br />
+                              CultTrait: 24
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Inspire - <br />
+                              DoctrineUnlockedUpgrades: 6
+                            </td>
+                            <td>
+                              - Intimidate - <br />
+                              DoctrineUnlockedUpgrades: 7
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - The Glory of Construction - <br />
+                              UnlockedUpgrades: 100 <br />
+                              DoctrineUnlockedUpgrades: 8
+                            </td>
+                            <td>
+                              - Ritual of Enlightenment - <br />
+                              UnlockedUpgrades: 101 <br />
+                              DoctrineUnlockedUpgrades: 9
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Glory Through Toil Ritual - <br />
+                              UnlockedUpgrades: 102 <br />
+                              DoctrineUnlockedUpgrades: 12
+                            </td>
+                            <td>
+                              - Holy Day Ritual - <br />
+                              UnlockedUpgrades: 103 <br />
+                              DoctrineUnlockedUpgrades: 13
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+
+                      <h2 style="text-align: center">Possessions</h2>
+
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Left Branch</th>
+                            <th>Right Branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              - Extort Tithes - <br />
+                              DoctrineUnlockedUpgrades: 14
+                            </td>
+                            <td>
+                              - Bribe Follower - <br />
+                              DoctrineUnlockedUpgrades: 15
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Belief in Materialism Trait - <br />
+                              DoctrineUnlockedUpgrades: 18 <br />
+                              CultTraits: 18
+                            </td>
+                            <td>
+                              - Belif in False Idols Trait - <br />
+                              DoctrineUnlockedUpgrades: 19 <br />
+                              CultTraits: 18
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Alms for the Poor Ritual - <br />
+                              UnlockedUpgrades: 104 <br />
+                              DoctrineUnlockedUpgrades: 20
+                            </td>
+                            <td>
+                              - Ritual of Enrichment - <br />
+                              UnlockedUpgrades: 105 <br />
+                              DoctrineUnlockedUpgrades: 21
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Sacral Arthitecture Trait - <br />
+                              DoctrineUnlockedUpgrades: 16 <br />
+                              CultTraits:27
+                            </td>
+                            <td>
+                              - Devotee Trait - <br />
+                              DoctrineUnlockedUpgrades: 17 <br />
+                              CultTraits:26
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                      <h2 style="text-align: center">Law and Order</h2>
+
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Left Branch</th>
+                            <th>Right Branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              - Murder Follower - <br />
+                              DoctrineUnlockedUpgrades: 38
+                            </td>
+                            <td>
+                              - Ascend Follower Ritual - <br />
+                              UnlockedUpgrades: 154 <br />
+                              DoctrineUnlockedUpgrades: 39
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Ritualist Fight Pit - <br />
+                              UnlockedUpgrades: 112 <br />
+                              DoctrineUnlockedUpgrades: 40
+                            </td>
+                            <td>
+                              - Wedding - <br />
+                              UnlockedUpgrades: 113 <br />
+                              DoctrineUnlockedUpgrades: 41
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Belief in Original Sin Trait - <br />
+                              DoctrineUnlockedUpgrades: 44 <br />
+                              CultTrait: 7
+                            </td>
+                            <td>
+                              - Belief in Absolution Trait - <br />
+                              DoctrineUnlockedUpgrades: 45 <br />
+                              CultTrait: 8
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Loyalty Enforcer - <br />
+                              UnlockedUpgrades: 114 <br />
+                              DoctrineUnlockedUpgrades: 42
+                            </td>
+                            <td>
+                              - Tax Enforcer - <br />
+                              UnlockedUpgrades: 115 <br />
+                              DoctrineUnlockedUpgrades: 43
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                      <h2 style="text-align: center">Sustenance</h2>
+
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Left Branch</th>
+                            <th>Right Branch</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              - Ritual Fast - <br />
+                              UnlockedUpgrades: 106 <br />
+                              DoctrineUnlockedUpgrades: 22
+                            </td>
+                            <td>
+                              - Feasting Ritual - <br />
+                              UnlockedUpgrades: 107 <br />
+                              DoctrineUnlockedUpgrades: 23
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Cannibal Trait - <br />
+                              DoctrineUnlockedUpgrades: 26 <br />
+                              CultTrait: 5
+                            </td>
+                            <td>
+                              - Grass Eater Trait - <br />
+                              DoctrineUnlockedUpgrades: 27 <br />
+                              CultTrait: 6
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Ritual of the Harvest - <br />
+                              UnlockedUpgrades: 108 <br />
+                              DoctrineUnlockedUpgrades: 28
+                            </td>
+                            <td>
+                              - Ritual of the Ocean&#39;s Bounty - <br />
+                              UnlockedUpgrades: 109 <br />
+                              DoctrineUnlockedUpgrades: 29
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              - Substances Encouraged Trait - <br />
+                              DoctrineUnlockedUpgrades: 24 <br />
+                              CultTrait: 28
+                            </td>
+                            <td>
+                              - Belief in Prohibitionism - <br />
+                              DoctrineUnlockedUpgrades: 25 <br />
+                              CultTrait: 29
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                      
+                      
+
+                </p>
+              </div>
+
+              <div id="Divine" class="tabcontent">
+                <h3>Divine Inspiration Tree</h3>
+                <p>In the progress of migrating. Go to here for now <a href="/divineinspirationtree">Divine Inspiration Tree</a></p>
+              </div>
+
+              <div id="Cooking" class="tabcontent">
+                <h3>Cooking Recipes</h3>
+                <p>
+                  In order to use/unlock any of the recipes just edit <span class="bold">RecipesDiscovered:</span> and add any of the following numbers to unlock the matching recipe. Make sure every number you add has a comma after it <span class="bold"></span>EXCEPT</span> the last one.
+                </p>
+                <p><table style="text-align: center;">
+                  <thead>
+                    <tr>
+                      <th>ID</th>
+                      <th>Recipe Name</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>32</td>
+                      <td>Paltry Pumpkin Soup</td>
+                    </tr>
+                    <tr>
+                      <td>57</td>
+                      <td>Grassy Gruel</td>
+                    </tr>
+                    <tr>
+                      <td>58</td>
+                      <td>Heart Meat Broth</td>
+                    </tr>
+                    <tr>
+                      <td>59</td>
+                      <td>Splendid Vegetable Feast</td>
+                    </tr>
+                    <tr>
+                      <td>60</td>
+                      <td>Tasty Fish Meal</td>
+                    </tr>
+                    <tr>
+                      <td>65</td>
+                      <td>Minced Follower Meat</td>
+                    </tr>
+                    <tr>
+                      <td>69</td>
+                      <td>Bowl of Poop</td>
+                    </tr>
+                    <tr>
+                      <td>99</td>
+                      <td>Delicious Fish Feast</td>
+                    </tr>
+                    <tr>
+                      <td>100</td>
+                      <td>Pungent Fish Stew</td>
+                    </tr>
+                    <tr>
+                      <td>106</td>
+                      <td>Basic Berry Bowl</td>
+                    </tr>
+                    <tr>
+                      <td>107</td>
+                      <td>Cheery Cauliflower Chowder</td>
+                    </tr>
+                    <tr>
+                      <td>108</td>
+                      <td>Meager Mixed Meal</td>
+                    </tr>
+                    <tr>
+                      <td>109</td>
+                      <td>Modest Mixed Meal</td>
+                    </tr>
+                    <tr>
+                      <td>110</td>
+                      <td>Magnificent Mixed Meal</td>
+                    </tr>
+                    <tr>
+                      <td>111</td>
+                      <td>Deadly Dish</td>
+                    </tr>
+                    <tr>
+                      <td>112</td>
+                      <td>Stringy Meat Gruel</td>
+                    </tr>
+                    <tr>
+                      <td>113</td>
+                      <td>Mighty Meat Feast</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </p>
+              </div>
+              
+              <div id="Item" class="tabcontent">
+                <h3>Item IDs</h3>
+                <p>
+                  This is a list of the currently known item IDs. Some are unused or not an inventory item. They are here for reference and potential future modding.
+                </br></br>
+                  In order to add items to your inventory search for <span class="bold">"items":</span> and edit the following lines where <span class="bold">type</span> is the id of the item form the list and <span class="bold">quantity</span> AND <span class="bold">UnreservedQuantity</span> is the amount you want. You can edit existing ones by updating the quantity or add new ones by using the code below.
+                  <pre>
+                    <code>
+                  ,{
+                  "type": 20,
+                  "quantity": 0,
+                  "QuantityReserved": 0,
+                  "UnreservedQuantity": 0
+                  }
+                </code>
+                </pre>
+                </p>
+                <p>
+                  <table style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Item Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>1</td>
+                        <td>Logs</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>Rocks</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>Unused / Rock2</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>Unused / Rock3</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>Unused / SEED_SWORD</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Meat</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Wheat (unused)</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>Bberry Bush Seeds</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Bones</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>Devotion ( shouldnt be an item )</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Vines (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Red Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>Half Red Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Red Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>Half Blue Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>Unused / TIME_TOKEN</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>Unused / GENERIC</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>STAINED_GLASS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>19</td>
+                        <td>FLOWERS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>20</td>
+                        <td>Gold Coins</td>
+                      </tr>
+                      <tr>
+                        <td>21</td>
+                        <td>Berry</td>
+                      </tr>
+                      <tr>
+                        <td>22</td>
+                        <td>Heart of a Heretic</td>
+                      </tr>
+                      <tr>
+                        <td>23</td>
+                        <td>BLUE_PRINT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>24</td>
+                        <td>WEAPON_CARD (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>CURSE_CARD (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>26</td>
+                        <td>Tarot Card</td>
+                      </tr>
+                      <tr>
+                        <td>27</td>
+                        <td>SOUL_FRAGMENT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>28</td>
+                        <td>Salmon</td>
+                      </tr>
+                      <tr>
+                        <td>29</td>
+                        <td>Menticide Mushroom</td>
+                      </tr>
+                      <tr>
+                        <td>30</td>
+                        <td>BLACK_SOUL (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>31</td>
+                        <td>MUSHROOM_BIG (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>32</td>
+                        <td>MEAL (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>33</td>
+                        <td>Minnow (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>Tuna (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>35</td>
+                        <td>Grass</td>
+                      </tr>
+                      <tr>
+                        <td>36</td>
+                        <td>THORNS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>37</td>
+                        <td>KEY_PIECE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>KEY (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>39</td>
+                        <td>Poop</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>Blueprint [twitch logo ] (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td>FOUND_ITEM_WEAPON (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>42</td>
+                        <td>FOUND_ITEM_CURSE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>43</td>
+                        <td>Small Gift</td>
+                      </tr>
+                      <tr>
+                        <td>44</td>
+                        <td>Big Gift</td>
+                      </tr>
+                      <tr>
+                        <td>45</td>
+                        <td>Flower Necklace</td>
+                      </tr>
+                      <tr>
+                        <td>46</td>
+                        <td>Feather Necklace</td>
+                      </tr>
+                      <tr>
+                        <td>47</td>
+                        <td>Skull Necklace</td>
+                      </tr>
+                      <tr>
+                        <td>48</td>
+                        <td>Natures Necklace</td>
+                      </tr>
+                      <tr>
+                        <td>49</td>
+                        <td>Moon Necklace</td>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>Pumpkin</td>
+                      </tr>
+                      <tr>
+                        <td>51</td>
+                        <td>Pumpkin Seeds</td>
+                      </tr>
+                      <tr>
+                        <td>52</td>
+                        <td>Follower Form (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>53</td>
+                        <td>Diesed Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>54</td>
+                        <td>Permanent Half Heart (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>55</td>
+                        <td>Camellia</td>
+                      </tr>
+                      <tr>
+                        <td>56</td>
+                        <td>FLOWER_WHITE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>57</td>
+                        <td>MEAL_GRASS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>58</td>
+                        <td>MEAL_MEAT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>59</td>
+                        <td>MEAL_GREAT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>60</td>
+                        <td>MEAL_GOOD_FISH (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>61</td>
+                        <td>MEAT_ROTTEN</td>
+                      </tr>
+                      <tr>
+                        <td>62</td>
+                        <td>Follower Meat</td>
+                      </tr>
+                      <tr>
+                        <td>63</td>
+                        <td>Follower Meat Rotten</td>
+                      </tr>
+                      <tr>
+                        <td>64</td>
+                        <td>MEAL_ROTTEN (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>65</td>
+                        <td>MEAL_FOLLOWER_MEAT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>66</td>
+                        <td>N/A</td>
+                      </tr>
+                      <tr>
+                        <td>67</td>
+                        <td>MEALS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>68</td>
+                        <td>N/A</td>
+                      </tr>
+                      <tr>
+                        <td>69</td>
+                        <td>MEAL_POOP (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>70</td>
+                        <td>Menticide Mushroom Sport</td>
+                      </tr>
+                      <tr>
+                        <td>71</td>
+                        <td>SEED_FLOWER_WHITE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>72</td>
+                        <td>Camellia Seed (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>73</td>
+                        <td>GRASS2 (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>74</td>
+                        <td>GRASS3 (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>75</td>
+                        <td>GRASS4 (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>76</td>
+                        <td>GRASS5 (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>77</td>
+                        <td>FLOWER_PURPLE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>78</td>
+                        <td>SEED_TREE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>79</td>
+                        <td>MAP (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>80</td>
+                        <td>MEAL_MUSHROOMS</td>
+                      </tr>
+                      <tr>
+                        <td>81</td>
+                        <td>Wooden Planks</td>
+                      </tr>
+                      <tr>
+                        <td>82</td>
+                        <td>Stone Blocks</td>
+                      </tr>
+                      <tr>
+                        <td>83</td>
+                        <td>Gold Nugget</td>
+                      </tr>
+                      <tr>
+                        <td>84</td>
+                        <td>Rope (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>85</td>
+                        <td>Followers (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>86</td>
+                        <td>Gold Bars (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>87</td>
+                        <td>BLOOD_STONE (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>88</td>
+                        <td>TRINKET_CARD_UNLOCKED (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>89</td>
+                        <td>Crystal Shards (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>90</td>
+                        <td>Spider Silk</td>
+                      </tr>
+                      <tr>
+                        <td>91</td>
+                        <td>Crab</td>
+                      </tr>
+                      <tr>
+                        <td>92</td>
+                        <td>Lobster</td>
+                      </tr>
+                      <tr>
+                        <td>93</td>
+                        <td>Octopus</td>
+                      </tr>
+                      <tr>
+                        <td>94</td>
+                        <td>Squid</td>
+                      </tr>
+                      <tr>
+                        <td>95</td>
+                        <td>Swordflish</td>
+                      </tr>
+                      <tr>
+                        <td>96</td>
+                        <td>Blowfish</td>
+                      </tr>
+                      <tr>
+                        <td>97</td>
+                        <td>Beetroot</td>
+                      </tr>
+                      <tr>
+                        <td>98</td>
+                        <td>Beetroot Seeds</td>
+                      </tr>
+                      <tr>
+                        <td>99</td>
+                        <td>MEAL_GREAT_FISH</td>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>MEAL_BAD_FISH (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>101</td>
+                        <td>Eye of the Witness</td>
+                      </tr>
+                      <tr>
+                        <td>102</td>
+                        <td>Cauliflower</td>
+                      </tr>
+                      <tr>
+                        <td>103</td>
+                        <td>Cauliflower Seed</td>
+                      </tr>
+                      <tr>
+                        <td>104</td>
+                        <td>DISCIPLE_POINTS (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>105</td>
+                        <td>Morsel</td>
+                      </tr>
+                      <tr>
+                        <td>106</td>
+                        <td>MEAL_BERRIES (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>107</td>
+                        <td>MEAL_MEDIUM_VEG (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>108</td>
+                        <td>MEAL_BAD_MIXED (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>109</td>
+                        <td>MEAL_MEDIUM_MIXED (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>110</td>
+                        <td>MEAL_GREAT_MIXED (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>111</td>
+                        <td>MEAL_DEADLY (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>112</td>
+                        <td>MEAL_BAD_MEAT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>113</td>
+                        <td>MEAL_GREAT_MEAT (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>114</td>
+                        <td>Holy Talisman</td>
+                      </tr>
+                      <tr>
+                        <td>115</td>
+                        <td>MEAL_BURNED (unused/not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>116</td>
+                        <td>Commandment Stone Fragment (not an item)</td>
+                      </tr>
+                      <tr>
+                        <td>117</td>
+                        <td>Shell</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                </p>
+              </div>
+              
+              <div id="Tarot" class="tabcontent">
+                <h3>Tarot Cards</h3>
+                <p>
+                  Tarot cards are the easiest of them all and can be manually unlocked by adding them to <span class="bold">PlayerFoundTrinkets</span>.</br>
+The default Tarot cards are: 0, 3, 7, 8, 9, 10, 12, 14, 32, 33, 34, 36, 42, 44, 48
+                </p>
+                <p>
+                  <table style="text-align: center;">
+                    <thead>
+                      <tr>
+                        <th>ID</th>
+                        <th>Tarot Card Name</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>0</td>
+                        <td>The Hearts I</td>
+                      </tr>
+                      <tr>
+                        <td>1</td>
+                        <td>The Hearts II</td>
+                      </tr>
+                      <tr>
+                        <td>2</td>
+                        <td>The Hearts III</td>
+                      </tr>
+                      <tr>
+                        <td>3</td>
+                        <td>The Lovers I</td>
+                      </tr>
+                      <tr>
+                        <td>4</td>
+                        <td>The Lovers II</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>All Seeing Sun</td>
+                      </tr>
+                      <tr>
+                        <td>6</td>
+                        <td>Weeping Moon</td>
+                      </tr>
+                      <tr>
+                        <td>7</td>
+                        <td>Gift From Below</td>
+                      </tr>
+                      <tr>
+                        <td>8</td>
+                        <td>The Aracnid</td>
+                      </tr>
+                      <tr>
+                        <td>9</td>
+                        <td>Diseased Heart</td>
+                      </tr>
+                      <tr>
+                        <td>10</td>
+                        <td>True Sight</td>
+                      </tr>
+                      <tr>
+                        <td>11</td>
+                        <td>Fervour&#39;s Host</td>
+                      </tr>
+                      <tr>
+                        <td>12</td>
+                        <td>Death&#39;s Door</td>
+                      </tr>
+                      <tr>
+                        <td>13</td>
+                        <td>The Deal</td>
+                      </tr>
+                      <tr>
+                        <td>14</td>
+                        <td>Telescope</td>
+                      </tr>
+                      <tr>
+                        <td>15</td>
+                        <td>Hands of Rage</td>
+                      </tr>
+                      <tr>
+                        <td>16</td>
+                        <td>Natures Boon</td>
+                      </tr>
+                      <tr>
+                        <td>17</td>
+                        <td>The Burning DDead</td>
+                      </tr>
+                      <tr>
+                        <td>18</td>
+                        <td>Ambrosia</td>
+                      </tr>
+                      <tr>
+                        <td>31</td>
+                        <td>The Path</td>
+                      </tr>
+                      <tr>
+                        <td>32</td>
+                        <td>Divine Strength</td>
+                      </tr>
+                      <tr>
+                        <td>33</td>
+                        <td>Master of the Art</td>
+                      </tr>
+                      <tr>
+                        <td>34</td>
+                        <td>Fervours Harvest</td>
+                      </tr>
+                      <tr>
+                        <td>35</td>
+                        <td>Soul Snatcher</td>
+                      </tr>
+                      <tr>
+                        <td>36</td>
+                        <td>Shield of Faith</td>
+                      </tr>
+                      <tr>
+                        <td>37</td>
+                        <td>The Bomb</td>
+                      </tr>
+                      <tr>
+                        <td>38</td>
+                        <td>Ichor Earned</td>
+                      </tr>
+                      <tr>
+                        <td>39</td>
+                        <td>Ichor Lingered</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>Mithridatism</td>
+                      </tr>
+                      <tr>
+                        <td>41</td>
+                        <td>Blazing Trail</td>
+                      </tr>
+                      <tr>
+                        <td>42</td>
+                        <td>Fortune&#39;s Blessing</td>
+                      </tr>
+                      <tr>
+                        <td>44</td>
+                        <td>Divine Curse</td>
+                      </tr>
+                      <tr>
+                        <td>45</td>
+                        <td>Strength from Within</td>
+                      </tr>
+                      <tr>
+                        <td>46</td>
+                        <td>Strength from Without</td>
+                      </tr>
+                      <tr>
+                        <td>47</td>
+                        <td>Neptunes Curse</td>
+                      </tr>
+                      <tr>
+                        <td>48</td>
+                        <td>Rabbits Foot</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                </p>
+              </div>
+
+        </div>
+    </main>
+    <script>document.getElementById("defaultOpen").click();</script>
 </body>
 </html>
