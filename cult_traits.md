@@ -1,6 +1,6 @@
 # Cult Traits
 
-*> This were worked out by DayBreakShifter on the gbatemp forums
+>* This were worked out by DayBreakShifter on the gbatemp forums
 
 In order to update the cult traits, there are a couple places to update them. The ones that come from the Doctrine Tree should only be put under **CultTraits** as noted in the Doctrine Numbers doc. All of the other ones go in **"Traits":** under the specific follower you want them to apply too
 
