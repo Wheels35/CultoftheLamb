@@ -11,10 +11,8 @@
     margin: auto;
  }
 div.crown{
-    /* background-image: url("imgs/crown.png"); */
     background: no-repeat center top url("imgs/crown.png");
     background-size: 12%;
-    /* background-repeat: no-repeat; */
     width: 100%;
     height: 100%;
     top: 0;
@@ -25,8 +23,6 @@ div.crown{
 
  div.title { 
     border-radius:1rem;
-    /* background: red; */
-    /* width: 20rem; */
     text-align: center;
     z-index: 1;
     color: white;
@@ -48,10 +44,6 @@ div.crown{
     margin: 0 auto;
   }
   
-  main {
-    /* margin-bottom: 4rem; */
-  }
-  
   header {
     margin-bottom: 4rem;
     padding: 2rem 0 0 0;
@@ -66,7 +58,9 @@ div.crown{
 
 
 
-
+.cheeseburgers{
+  text-align: center;
+}
 
 
   /* Style the tab */
