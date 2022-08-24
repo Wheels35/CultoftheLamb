@@ -100,10 +100,10 @@ In order to add items to your inventory search for **"items":** and add the foll
 | 83 | Gold Nugget  |
 | 84 | Rope (unused/not an item)  |
 | 85 | Followers (unused/not an item)  |
-| 86 | Gold Bars (unused/not an item)  |
+| 86 | Gold Bars |
 | 87 | BLOOD_STONE (unused/not an item)  |
 | 88 | TRINKET_CARD_UNLOCKED (unused/not an item)  |
-| 89 | Crystal Shards (unused/not an item)  |
+| 89 | Crystal Shards |
 | 90 | Spider Silk  |
 | 91 | Crab  |
 | 92 | Lobster  |
