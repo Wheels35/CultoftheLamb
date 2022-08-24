@@ -47,8 +47,8 @@ In order to add items to your inventory search for **"items":** and add the foll
 | 30 | BLACK_SOUL (unused/not an item)  |
 | 31 | MUSHROOM_BIG (unused/not an item)  |
 | 32 | MEAL (unused/not an item)  |
-| 33 | Minnow  (unused/not an item)  |
-| 34 | Tuna (unused/not an item)  |
+| 33 | Minnow |
+| 34 | Tuna|
 | 35 | Grass  |
 | 36 | THORNS  (unused/not an item)  |
 | 37 | KEY_PIECE  (unused/not an item)  |
