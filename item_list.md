@@ -47,8 +47,8 @@ In order to add items to your inventory search for **"items":** and add the foll
 | 30 | BLACK_SOUL (unused/not an item)  |
 | 31 | MUSHROOM_BIG (unused/not an item)  |
 | 32 | MEAL (unused/not an item)  |
-| 33 | Minnow  (unused/not an item)  |
-| 34 | Tuna (unused/not an item)  |
+| 33 | Minnow |
+| 34 | Tuna|
 | 35 | Grass  |
 | 36 | THORNS  (unused/not an item)  |
 | 37 | KEY_PIECE  (unused/not an item)  |
@@ -100,10 +100,10 @@ In order to add items to your inventory search for **"items":** and add the foll
 | 83 | Gold Nugget  |
 | 84 | Rope (unused/not an item)  |
 | 85 | Followers (unused/not an item)  |
-| 86 | Gold Bars (unused/not an item)  |
+| 86 | Gold Bars |
 | 87 | BLOOD_STONE (unused/not an item)  |
 | 88 | TRINKET_CARD_UNLOCKED (unused/not an item)  |
-| 89 | Crystal Shards (unused/not an item)  |
+| 89 | Crystal Shards |
 | 90 | Spider Silk  |
 | 91 | Crab  |
 | 92 | Lobster  |
