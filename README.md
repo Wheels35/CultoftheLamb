@@ -10,7 +10,8 @@ I suggest Notepad++ and the JSTool plugin. Once you open your file you can run d
 
 If after doing any of the updates you have a green exclamation point that you cannot get rid of due to removing what it was pointing to: i.e. changing a doctrine do the following as well:
 
-There is a section called "Alerts" and it lists each of the possible alerts you havent seen or checked off. In our case the Doctrine alerts. Make sure the section called _alerts directly below the type you need to remove is empty like the example below, and make sure "Total" is set to 0 as well. This should remove your dangling alerts.
+There is a section called **"Alerts"** and it lists each of the possible alerts you havent seen or checked off. In our case the Doctrine alerts. Make sure the section called **\_alerts** directly below the type you need to remove is empty like the example below, and make sure **"Total"** is set to 0 as well. This should remove your dangling alerts.
+
 ---
     "Alerts": {
         "Doctrine": {
