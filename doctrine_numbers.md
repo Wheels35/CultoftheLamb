@@ -13,7 +13,7 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 ## Afterlife
 |Left Branch|Right Branch|
 |---|---|
-| **- Belief in Sacrifice Trait -** <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
+| - Belief in Sacrifice Trait - <br> DoctrineUnlockedUpgrades: 30 <br> CultTrait: 9    |  - Belief in Afterlife Trait - <br> DoctrineUnlockedUpgrades: 31 <br> CultTrait: 3|
 |  - Ritual of Resurrection -  <br> UnlockedUpgrades: 110 <br> DoctrineUnlockedUpgrades: 32|  - Funeral - <br> UnlockedUpgrades: 111 <br> DoctrineUnlockedUpgrades: 33|
 | - Respect Your Elders Trait - <br> DoctrineUnlockedUpgrades: 34  <br> CultTrait: 30  | - Good Die Young Trait - <br> DoctrineUnlockedUpgrades: 35 <br> CultTrait: 31|
 |  - Return to the Earth - <br> (Building unlock) UnlockedUpgrades: 53 <br> DoctrineUnlockedUpgrades: 36|  - Grieve the fallen - <br> (Building unlock) UnlockedUpgrades: 57 <br> DoctrineUnlockedUpgrades: 37|
@@ -49,3 +49,11 @@ In order to replace _Ritual of Funeral_ with _Ritual of Ressurection_ remove the
 | - Cannibal Trait - <br> DoctrineUnlockedUpgrades: 26 <br> CultTrait: 5| - Grass Eater Trait - <br> DoctrineUnlockedUpgrades: 27  <br> CultTrait: 6|
 | - Ritual of the Harvest - <br> UnlockedUpgrades: 108 <br> DoctrineUnlockedUpgrades: 28 | - Ritual of the Ocean's Bounty - <br> UnlockedUpgrades: 109 <br> DoctrineUnlockedUpgrades: 29|
 | - Substances Encouraged Trait - <br> DoctrineUnlockedUpgrades: 24 <br> CultTrait: 28| - Belief in Prohibitionism - <br> DoctrineUnlockedUpgrades: 25  <br> CultTrait: 29|
+
+## Sins
+|Left Branch|Right Branch|
+|---|---|
+| - Rite of Lust - <br> UnlockedUpgrades: 268 <br> DoctrineUnlockedUpgrades: 53 | - Rite of Wrath - <br> UnlockedUpgrades: 267 <br> DoctrineUnlockedUpgrades: 54 |
+| - Sinner's Pride - <br> UnlockedUpgrades: 277 <br> DoctrineUnlockedUpgrades: 60 <br> | - Gluttony of Cannibals - <br> UnlockedUpgrades: 276 <br> DoctrineUnlockedUpgrades: 59 |
+| - Doctrinal Extremist - <br> DoctrineUnlockedUpgrades: 55 <br> CultTrait: 44 | - Violent Extremist - <br> DoctrineUnlockedUpgrades: 56 <br> CultTrait: 45 |
+| - Born of Sin - <br> DoctrineUnlockedUpgrades: 57 <br> CultTrait: 46| - Blind Allegiance - <br> DoctrineUnlockedUpgrades: 58  <br> CultTrait: 47|
